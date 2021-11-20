@@ -1,0 +1,39 @@
+# Thermodynamics Snookered
+
+This project can be used to simulate a hard sphere gas in a container.
+
+Files
+-> Ball.py: 
+-- contains the definition of the Ball class, used to represent balls in the 
+-- container. 
+
+-> Simulation.py:
+-- contains the definition of the Simulation class, used to handle the
+-- simulation step-by-step and keep track of the macroscopic properties of the 
+-- system. 2 versions of next_collision (next_collision1 and next_collision2)
+-- and run (run1 and run2) are included for completeness. Version 2 is faster, 
+-- and is called by default from other modules.
+
+-> Testing.py:
+-- this is a self-contained testing unit, containing the definition of the Test
+-- class, which is a subclass of unittest's TestCase class. Several test cases
+-- are defined, and are run automatically when the module is called through the
+-- command line or from the IDE. 
+
+-> Experiments.py:
+-- this module contains definitions for various experiments which can be 
+-- conducted using the simulation. All experiments run with the faster, second
+-- version of the next_collision and run methods.
+
+-> SimScript.py:
+-- a short example script to demonstrate some uses of the functions defined in
+-- the Experiments module.
+
+Usage
+
+Documentation on the parameters and outputs of methods for all classes is 
+available using help(). To run experiments and create plots, simply import the
+Ball, Simulation classes and Experiments module into a separate script, and
+call the relevant function from Experiments. 
+
+##
